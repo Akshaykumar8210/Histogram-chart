@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Histogram-chart/static/css/main.e6c13ad2.css",
+    "main.js": "/Histogram-chart/static/js/main.47bfffb5.js",
+    "static/js/787.f0b641e8.chunk.js": "/Histogram-chart/static/js/787.f0b641e8.chunk.js",
+    "index.html": "/Histogram-chart/index.html",
+    "main.e6c13ad2.css.map": "/Histogram-chart/static/css/main.e6c13ad2.css.map",
+    "main.47bfffb5.js.map": "/Histogram-chart/static/js/main.47bfffb5.js.map",
+    "787.f0b641e8.chunk.js.map": "/Histogram-chart/static/js/787.f0b641e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.47bfffb5.js"
+  ]
+}
