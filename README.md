@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+I have hosted this on the github :- https://akshaykumar8210.github.io/Histogram-chart/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Histogram of Word Frequency
+This project provides a web application that generates a word frequency histogram based on the input text. It utilizes the Chart.js library to create the histogram visualization.
 
-## Available Scripts
+###Components App The App component is the main component of the application. It renders the word frequency histogram and provides a button to fetch and process the input text. The component maintains the text state, which represents the input text, and the histogramData state, which holds the data for the histogram.
 
-In the project directory, you can run:
+###The component includes the following functions:
 
-### `npm start`
+#handleClick: This function is triggered when the user clicks the "Submit" button. It fetches the input text from the specified URL, calculates the word frequency using the getFrequency function, updates the text state, and generates the histogram data using the getHistogramData function. #getFrequency: This function takes the input text as a parameter and returns an object representing the frequency of each word in the text. #getTopWords: This function takes the word frequency object as a parameter and returns an array of the top 20 most occurring words based on their frequency. #getHistogramData: This function takes the word frequency object as a parameter and returns the data object required for the histogram visualization. It includes the labels (top words) and datasets (word frequency data) for the chart. #exportCSV: This function is triggered when the user clicks the "Export" button. It generates a CSV file containing the labels and data of the histogram and initiates the download of the file. #Histogram The Histogram component is a reusable component that encapsulates the rendering of the word frequency histogram using the Chart.js library. It receives the word frequency data as props and updates the chart accordingly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The component utilizes the useState and useEffect hooks to manage the chart data. It receives the top20Words prop, which represents the top 20 words and their corresponding counts. The component initializes the chart data in the chartData state and updates it whenever the top20Words prop changes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###Libraries and Plugins
+The following libraries and plugins are used in this code:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React: A JavaScript library for building user interfaces. react-chartjs-2: A React wrapper for Chart.js that provides a set of components for rendering various chart types. Chart.js: A JavaScript library for data visualization. It provides a simple and flexible API to create charts. chart.js/auto: A module that automatically registers the necessary components and plugins from Chart.js based on the chart type used in the code. Make sure to install these libraries as dependencies in your project before running the code. #THANK YOU
